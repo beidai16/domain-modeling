@@ -38,8 +38,8 @@ CREATE TABLE comments (
 
 CREATE TABLE follows (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  follower_id INTEGER, -- Linked to account_id
-  followee_id INTEGER, -- Linked to account_id
+  follower_account_id INTEGER, -- Linked to account_id
+  followed_account_id INTEGER, -- Linked to account_id
   follow_time DATETIME
 );
 
